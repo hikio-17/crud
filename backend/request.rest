@@ -1,0 +1,29 @@
+GET http://localhost:8000/product
+
+###
+GET http://localhost:8000/product/62478d7c497dd2def7d2641a
+
+###
+POST http://localhost:8000/product
+Content-Type: application/json
+
+{
+    "name": "MacBook",
+    "price": 25000000,
+    "stock": 24,
+    "status": true
+}
+
+###
+DELETE  http://localhost:8000/62478d7c497dd2def7d2641a
+
+###
+PUT http://localhost:8000/product/62478d7c497dd2def7d2641a
+Content-Type: application/json
+
+{
+    "name": "Laptop Asis",
+    "price": 20000000,
+    "stock": 11,
+    "status": false
+}
